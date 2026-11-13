@@ -38,9 +38,9 @@ export default function Anatomy() {
     <section id="anatomy" ref={sec} className="anatomy" style={{ height: `${(STEPS.length + 2) * 75}vh` }}>
       <div className="anatomy__pin">
         <div className="anatomy__info">
-          <div className="section__label mono">
-            <span>(02)</span> <span>Anatomy of a website that sells</span>
-          </div>
+          <h2 className="section__label mono">
+            <span>(02)</span> <span>Anatomy of a website design that sells</span>
+          </h2>
 
           <div className="anatomy__count mono">
             <span className="accent">{String(Math.max(0, step + 1)).padStart(2, "0")}</span> /{" "}
@@ -50,7 +50,7 @@ export default function Anatomy() {
           <div className="anatomy__current" key={step}>
             {step < 0 ? (
               <>
-                <h2 className="anatomy__tag">&lt;html&gt;</h2>
+                <p className="anatomy__tag">&lt;html&gt;</p>
                 <h3 className="anatomy__name">Every element earns its place.</h3>
                 <p className="anatomy__note">
                   Keep scrolling. We&apos;ll build a page in front of you and show you what each part is
@@ -59,7 +59,7 @@ export default function Anatomy() {
               </>
             ) : done ? (
               <>
-                <h2 className="anatomy__tag accent">200 OK</h2>
+                <p className="anatomy__tag accent">200 OK</p>
                 <h3 className="anatomy__name">Assembled. Shipped. Selling.</h3>
                 <p className="anatomy__note">
                   Seven elements, zero filler. That&apos;s the blueprint behind every site we launch.
@@ -67,7 +67,7 @@ export default function Anatomy() {
               </>
             ) : (
               <>
-                <h2 className="anatomy__tag">{active.tag}</h2>
+                <p className="anatomy__tag">{active.tag}</p>
                 <h3 className="anatomy__name">{active.name}</h3>
                 <p className="anatomy__note">{active.note}</p>
                 <ul className="anatomy__spec">

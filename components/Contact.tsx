@@ -52,7 +52,7 @@ export default function Contact() {
         <span>(08)</span> <span>Contact</span>
       </div>
       <h2 className="contact__title" aria-label="Let's make some noise.">
-        <span className="contact__line"><Letters text="Let's make" /></span>
+        <span className="contact__line"><Letters text="Let's make" /></span>{" "}
         <span className="contact__line"><Letters text="some " /><span className="contact__noise"><Letters text="noise." /></span></span>
       </h2>
 

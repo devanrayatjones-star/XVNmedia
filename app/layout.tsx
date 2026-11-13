@@ -4,6 +4,7 @@ import Loader from "@/components/Loader";
 import Cursor from "@/components/Cursor";
 import Nav from "@/components/Nav";
 import ScrollProgress from "@/components/ScrollProgress";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 const display = Syne({ subsets: ["latin"], weight: ["600", "700", "800"], variable: "--f-display" });
@@ -11,14 +12,24 @@ const body = Inter_Tight({ subsets: ["latin"], weight: ["400", "500", "600"], va
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--f-mono" });
 
 export const metadata: Metadata = {
-  title: "XVN Media — Website design, adverts & SEO",
-  description:
-    "XVN Media designs high-performance websites for businesses, then fills them with customers through adverts and SEO.",
+  metadataBase: new URL(SITE.url),
+  title: SITE.title,
+  description: SITE.description,
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "XVN Media — Websites & marketing that refuse to be ignored",
-    description: "Website design, adverts and SEO for businesses.",
     type: "website",
+    url: "/",
+    siteName: SITE.name,
+    title: SITE.title,
+    description: SITE.description,
+    locale: "en",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE.title,
+    description: SITE.description,
+  },
+  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {

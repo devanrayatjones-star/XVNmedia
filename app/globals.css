@@ -266,6 +266,9 @@ p {
   color: var(--muted);
   margin-bottom: 24px;
 }
+h2.section__label {
+  font-weight: 400;
+}
 .section__label span:first-child {
   color: var(--accent);
 }
@@ -712,6 +715,18 @@ html.menu-open .nav__logo-sub {
   text-transform: uppercase;
   white-space: nowrap;
   mix-blend-mode: difference; /* punches through the globe's dots */
+}
+.hero__kicker {
+  display: block;
+  margin-bottom: 18px;
+  font-family: var(--f-mono), monospace;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 1s var(--ease) calc(var(--intro) + 0.4s) forwards;
 }
 .hero__title .line {
   display: block;
@@ -2711,4 +2726,10 @@ html.menu-open .nav__logo-sub {
   .svc__row.is-hover .svc__desc {
     color: inherit;
   }
+}
+
+/* the nav sits at the very top of the mock, so show its label underneath */
+.mk-nav::after {
+  bottom: auto;
+  top: calc(100% + 6px);
 }

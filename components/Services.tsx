@@ -61,7 +61,7 @@ export default function Services() {
             onBlur={() => setHover(null)}
           >
             <span className="svc__num mono">{String(i + 1).padStart(2, "0")}</span>
-            <span className="svc__name">{sv.name}</span>
+            <h3 className="svc__name">{sv.name}</h3>
             <span className="svc__tags">
               {sv.tags.map((t) => (
                 <span key={t} className="pill">{t}</span>

@@ -30,12 +30,13 @@ export default function Hero() {
 
         <div className="hero__bottom">
           <h1 className="hero__title">
-            <span className="line"><span>Websites that</span></span>
+            <span className="hero__kicker">Website design, adverts &amp; SEO —</span>{" "}
+            <span className="line"><span>Websites that</span></span>{" "}
             <span className="line">
               <span>
                 <em className="outline">refuse</em> to be
               </span>
-            </span>
+            </span>{" "}
             <span className="line">
               <span>
                 ignored<b className="accent">.</b>

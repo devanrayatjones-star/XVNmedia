@@ -10,10 +10,16 @@ import Process from "@/components/Process";
 import Packages from "@/components/Packages";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { homeSchema } from "@/lib/schema";
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        // JSON.stringify output is safe here: all values are our own constants
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema()).replace(/</g, "\\u003c") }}
+      />
       <main>
         <Hero />
         <Marquee />

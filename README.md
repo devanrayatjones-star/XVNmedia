@@ -36,9 +36,15 @@ bar, film grain, and a full-screen mobile menu.
 `prefers-reduced-motion` is honoured throughout (the globe renders still and formed,
 the loader is skipped, transitions are removed).
 
+## SEO
+
+- Title, meta description, canonical, Open Graph and Twitter cards are set in `app/layout.tsx` from `lib/site.ts`.
+- JSON-LD (`ProfessionalService` + `WebSite`, with the three services) comes from `lib/schema.ts`.
+- `app/robots.ts`, `app/sitemap.ts`, `app/icon.svg` and a generated 1200×630 share image (`app/opengraph-image.tsx`).
+
 ## Things to replace before going live
 
-- **`lib/site.ts`** — contact email and social links.
+- **`lib/site.ts`** — the site's real domain (`url`: drives canonical, sitemap and share cards), contact email and social links (real profile URLs are also added to the structured data automatically).
 - **`components/Stats.tsx`** — the figures are placeholders.
 - **`components/Work.tsx`** — the case studies are placeholder concepts.
 - **`components/Packages.tsx`** — package contents.
