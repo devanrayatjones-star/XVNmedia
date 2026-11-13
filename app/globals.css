@@ -2699,3 +2699,16 @@ html.menu-open .nav__logo-sub {
     animation: none;
   }
 }
+
+/* touch screens can't hover — always show the service descriptions */
+@media (hover: none) {
+  .svc__desc {
+    max-height: none;
+    opacity: 1;
+    margin-top: 4px;
+    color: #b9b8b2;
+  }
+  .svc__row.is-hover .svc__desc {
+    color: inherit;
+  }
+}

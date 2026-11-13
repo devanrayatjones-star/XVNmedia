@@ -12,8 +12,7 @@ const CHANNELS = [
   { key: "seo", name: "SEO", color: "#c8ff2e", base: 14, growth: 0.16, spend: 0 },
   { key: "google", name: "Google Ads", color: "#5ee7ff", base: 22, growth: 0.06, spend: 900 },
   { key: "meta", name: "Meta Ads", color: "#ff5ec8", base: 17, growth: 0.07, spend: 700 },
-  { key: "tiktok", name: "TikTok", color: "#ffb02e", base: 9, growth: 0.11, spend: 400 },
-  { key: "email", name: "Email", color: "#ffffff", base: 7, growth: 0.05, spend: 60 },
+  { key: "tiktok", name: "TikTok Ads", color: "#ffb02e", base: 9, growth: 0.11, spend: 400 },
 ];
 const LEAD_VALUE = 120;
 
@@ -21,7 +20,7 @@ const series = (c: (typeof CHANNELS)[number]) =>
   Array.from({ length: WEEKS }, (_, w) => c.base * (1 + c.growth * w) * (0.92 + 0.16 * Math.abs(Math.sin(w * 1.7 + c.base))));
 
 export default function Marketing() {
-  const [on, setOn] = useState<Record<string, boolean>>({ seo: true, google: true, meta: true, tiktok: false, email: true });
+  const [on, setOn] = useState<Record<string, boolean>>({ seo: true, google: true, meta: true, tiktok: false });
   const panel = useRef<HTMLDivElement>(null);
   const live = useInView(panel);
 
@@ -53,13 +52,13 @@ export default function Marketing() {
     <section id="marketing" className="mkt section">
       <div className="mkt__left">
         <div className="section__label mono">
-          <span>(05)</span> <span>Marketing, managed</span>
+          <span>(05)</span> <span>Adverts &amp; SEO, managed</span>
         </div>
         <Reveal as="h2" variant="clip" className="h-xl">
           A website is the <span className="outline">engine.</span> We also bring the <span className="accent">fuel.</span>
         </Reveal>
         <p className="mkt__lede">
-          Launch day is day one. We plan, run and report on every channel that sends people to your
+          Launch day is day one. We run the adverts and the SEO that send people to your
           site — and we keep tuning until the numbers only go one way. Go on, flip the switches.
         </p>
 

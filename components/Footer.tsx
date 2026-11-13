@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer__top">
         <div>
           <span className="mono footer__label">Studio</span>
-          <p>Websites &amp; marketing for businesses that want to be noticed.</p>
+          <p>Website design, adverts and SEO for businesses that want to be noticed.</p>
         </div>
         <div>
           <span className="mono footer__label">Explore</span>
@@ -14,7 +14,7 @@ export default function Footer() {
             <li><a className="ulink" href="#anatomy">Anatomy</a></li>
             <li><a className="ulink" href="#services">Services</a></li>
             <li><a className="ulink" href="#work">Work</a></li>
-            <li><a className="ulink" href="#marketing">Marketing</a></li>
+            <li><a className="ulink" href="#marketing">Ads &amp; SEO</a></li>
           </ul>
         </div>
         <div>

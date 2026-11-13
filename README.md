@@ -1,6 +1,6 @@
 # XVN Media — website
 
-A deliberately over-the-top, single-page site for XVN Media (websites + marketing),
+A deliberately over-the-top, single-page site for XVN Media (website design, adverts & SEO),
 built with Next.js (App Router) and TypeScript. No UI libraries, no images: every
 visual is CSS, SVG or canvas.
 
@@ -24,7 +24,7 @@ npm run build && npm start   # production
 | Services | `Services` | Rows flood with colour, a floating preview card chases the cursor |
 | Stats | `Stats` | Count-up numbers |
 | Work | `Work` | Pinned horizontal-scroll gallery, 3D tilt + specular shine on hover |
-| Marketing | `Marketing` | Interactive dashboard — flip channel switches and every KPI/chart recalculates |
+| Ads & SEO | `Marketing` | Interactive dashboard — flip channel switches and every KPI/chart recalculates |
 | Process | `Process` | Rail that fills as you scroll and lights up each step |
 | Packages | `Packages` | Rotating neon conic-gradient border on the featured plan |
 | Contact | `Contact` | Glitching giant headline, floating-label form, chip selectors |

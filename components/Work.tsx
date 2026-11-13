@@ -6,10 +6,10 @@ import { sectionProgress, useScrollFrame } from "@/lib/hooks";
 // Placeholder case studies — replace with real client work.
 const PROJECTS = [
   { name: "Halden & Co.", kind: "Architecture studio", scope: "Website · SEO", result: "+184% enquiries", art: "a", year: "2026" },
-  { name: "Volta Fitness", kind: "Gym chain · 6 sites", scope: "Website · Paid social", result: "3.1× ROAS", art: "b", year: "2026" },
+  { name: "Volta Fitness", kind: "Gym chain · 6 sites", scope: "Website · Meta Ads", result: "3.1× ROAS", art: "b", year: "2026" },
   { name: "Nori Kitchen", kind: "Restaurant group", scope: "Website · Local SEO", result: "#1 for 40 terms", art: "c", year: "2025" },
-  { name: "Ferro Motors", kind: "Car dealership", scope: "E-commerce · Google Ads", result: "−46% cost per lead", art: "d", year: "2025" },
-  { name: "Lumen Dental", kind: "Private clinic", scope: "Rebrand · Website", result: "+92% bookings", art: "e", year: "2025" },
+  { name: "Ferro Motors", kind: "Car dealership", scope: "Website · Google Ads", result: "−46% cost per lead", art: "d", year: "2025" },
+  { name: "Lumen Dental", kind: "Private clinic", scope: "Website · SEO", result: "+92% bookings", art: "e", year: "2025" },
 ];
 
 function Card({ p, i }: { p: (typeof PROJECTS)[number]; i: number }) {

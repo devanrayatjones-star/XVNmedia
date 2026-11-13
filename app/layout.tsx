@@ -11,12 +11,12 @@ const body = Inter_Tight({ subsets: ["latin"], weight: ["400", "500", "600"], va
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--f-mono" });
 
 export const metadata: Metadata = {
-  title: "XVN Media — Websites & marketing that refuse to be ignored",
+  title: "XVN Media — Website design, adverts & SEO",
   description:
-    "XVN Media designs, builds and markets high-performance websites for businesses — web design, development, e-commerce, SEO, paid ads and social, under one roof.",
+    "XVN Media designs high-performance websites for businesses, then fills them with customers through adverts and SEO.",
   openGraph: {
     title: "XVN Media — Websites & marketing that refuse to be ignored",
-    description: "Web design, development and full-service marketing for businesses.",
+    description: "Website design, adverts and SEO for businesses.",
     type: "website",
   },
 };

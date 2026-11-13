@@ -4,7 +4,7 @@ import ParticleGlobe from "./ParticleGlobe";
 import ScrambleText from "./ScrambleText";
 import Magnetic from "./Magnetic";
 
-const BADGE = "XVN MEDIA ✦ WEBSITES ✦ MARKETING ✦ GROWTH ✦ ";
+const BADGE = "XVN MEDIA ✦ WEBSITES ✦ ADVERTS ✦ SEO ✦ ";
 
 export default function Hero() {
   return (
@@ -45,8 +45,8 @@ export default function Hero() {
 
           <div className="hero__side">
             <p>
-              XVN Media designs, builds and markets websites for businesses that want more than a
-              brochure. We make the site. Then we make it <strong>work</strong>.
+              XVN Media designs websites for businesses, then runs the adverts and SEO that fill them
+              with customers. We make the site. Then we make it <strong>work</strong>.
             </p>
             <div className="hero__ctas">
               <Magnetic>

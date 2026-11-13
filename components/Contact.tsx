@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { SITE } from "@/lib/site";
 import Magnetic from "./Magnetic";
 
-const SERVICES = ["Website", "E-commerce", "SEO", "Paid ads", "Social", "Branding"];
+const SERVICES = ["Website design", "Adverts", "SEO"];
 const BUDGETS = ["< 5k", "5–15k", "15–40k", "40k +"];
 
 function Letters({ text }: { text: string }) {
@@ -20,7 +20,7 @@ function Letters({ text }: { text: string }) {
 }
 
 export default function Contact() {
-  const [svc, setSvc] = useState<string[]>(["Website"]);
+  const [svc, setSvc] = useState<string[]>(["Website design"]);
   const [budget, setBudget] = useState(BUDGETS[1]);
   const [sent, setSent] = useState(false);
 

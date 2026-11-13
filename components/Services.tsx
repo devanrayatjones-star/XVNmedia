@@ -4,14 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 
 const SERVICES = [
-  { name: "Web design", glyph: "◐", hue: 72, tags: ["UI / UX", "Wireframes", "Design systems"], desc: "Interfaces with opinions. Every layout is designed around the one thing you need visitors to do." },
-  { name: "Web development", glyph: "</>", hue: 190, tags: ["Next.js", "WordPress", "Webflow"], desc: "Hand-built, accessible and blisteringly fast. Green Core Web Vitals are the starting line, not the goal." },
-  { name: "E-commerce", glyph: "£€$", hue: 330, tags: ["Shopify", "Checkout CRO", "Product feeds"], desc: "Stores that make buying feel inevitable — from first product view to the order-confirmed email." },
-  { name: "SEO", glyph: "#1", hue: 140, tags: ["Technical", "Local", "Content"], desc: "Technical foundations, local dominance and content that answers what your customers are actually searching." },
-  { name: "Paid ads", glyph: "↗", hue: 25, tags: ["Google", "Meta", "TikTok"], desc: "Campaigns built, run and ruthlessly optimised. Every click tracked all the way to a customer." },
-  { name: "Social media", glyph: "♥", hue: 280, tags: ["Strategy", "Content", "Community"], desc: "Scroll-stopping content and a calendar that never goes quiet, managed end to end." },
-  { name: "Branding", glyph: "✦", hue: 50, tags: ["Identity", "Tone of voice", "Guidelines"], desc: "A look and a voice people remember — applied consistently everywhere you show up." },
-  { name: "Analytics & CRO", glyph: "%", hue: 210, tags: ["GA4", "Heatmaps", "A/B tests"], desc: "We measure everything, then turn the numbers into changes that lift conversion month after month." },
+  { name: "Website design", glyph: "</>", hue: 72, tags: ["Design", "Build", "Hosting & care"], desc: "Custom-designed, hand-built and blisteringly fast. Every layout is built around the one thing you need visitors to do — and it looks incredible doing it." },
+  { name: "Adverts", glyph: "↗", hue: 25, tags: ["Google Ads", "Meta Ads", "TikTok Ads"], desc: "Campaigns planned, built, run and ruthlessly optimised. Every click tracked all the way to a paying customer, reported monthly in plain English." },
+  { name: "SEO", glyph: "#1", hue: 140, tags: ["Technical", "Local", "On-page"], desc: "Technical foundations, local dominance and pages that answer exactly what your customers are searching — so you show up first, for free." },
 ];
 
 export default function Services() {
@@ -50,7 +45,7 @@ export default function Services() {
           <span>(03)</span> <span>Services</span>
         </div>
         <Reveal as="h2" variant="clip" className="h-xl">
-          Everything your business needs <span className="outline">online.</span>
+          Three things. <span className="outline">Done</span> properly.
         </Reveal>
       </div>
 

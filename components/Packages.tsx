@@ -7,18 +7,18 @@ const PACKS = [
   {
     name: "Launch",
     for: "New businesses & refreshes",
-    items: ["Up to 6 custom pages", "Mobile-first design", "On-page SEO setup", "Analytics & tracking", "30 days of support"],
+    items: ["Up to 6 custom pages", "Mobile-first design", "On-page SEO setup", "Conversion tracking", "30 days of support"],
   },
   {
     name: "Grow",
     for: "Ready to be found",
     featured: true,
-    items: ["Everything in Launch", "Unlimited pages + CMS", "Monthly SEO & content", "Google & Meta ads managed", "Monthly performance report"],
+    items: ["Everything in Launch", "Unlimited pages + CMS", "Monthly SEO", "Google & Meta ads managed", "Monthly performance report"],
   },
   {
     name: "Dominate",
     for: "Own your market",
-    items: ["Everything in Grow", "E-commerce or web app", "Full-funnel paid media", "CRO & A/B testing", "Dedicated growth lead"],
+    items: ["Everything in Grow", "Ads on every platform", "Advanced technical SEO", "Landing page per campaign", "Dedicated account lead"],
   },
 ];
 

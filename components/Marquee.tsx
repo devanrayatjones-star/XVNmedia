@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { prefersReducedMotion } from "@/lib/hooks";
 
-const A = ["Web design", "Development", "E-commerce", "SEO", "Paid social", "Google Ads", "Branding", "Copy", "Analytics"];
+const A = ["Website design", "Adverts", "SEO", "Google Ads", "Meta Ads", "Local SEO", "Landing pages", "TikTok Ads"];
 const B = ["Faster", "Louder", "Sharper", "Higher-ranking", "Better-converting", "Unignorable"];
 
 function Row({ words, dir, className }: { words: string[]; dir: 1 | -1; className: string }) {

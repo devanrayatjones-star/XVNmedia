@@ -8,7 +8,7 @@ const STEPS = [
   { n: "01", t: "Discover", when: "Week 1", d: "Workshops, competitor teardown, keyword research and a brutally honest audit of what you have now." },
   { n: "02", t: "Design", when: "Weeks 2–3", d: "Wireframes, then full visual design. You see real pages early and often — no big reveal surprises." },
   { n: "03", t: "Build", when: "Weeks 3–6", d: "Hand-coded, tested on every screen size, tuned for speed, wired up to analytics before launch." },
-  { n: "04", t: "Grow", when: "Forever", d: "SEO, ads, content and monthly reporting. We keep pushing the numbers long after the confetti." },
+  { n: "04", t: "Grow", when: "Forever", d: "SEO, adverts and monthly reporting. We keep pushing the numbers long after the confetti." },
 ];
 
 export default function Process() {

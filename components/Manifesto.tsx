@@ -10,7 +10,7 @@ const TOKENS: Tok[] = [
   { chip: <span className="chip chip--browser"><i /><i /><i /> &lt;site/&gt;</span> },
   ..."that load fast, rank high and convert".split(" "),
   { chip: <span className="chip chip--toggle"><span /></span> },
-  ..."hard — then we run the marketing".split(" "),
+  ..."hard — then we run the adverts and SEO".split(" "),
   {
     chip: (
       <span className="chip chip--spark">
